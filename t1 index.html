@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nida Cars - Drive the Future</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Nida Cars Logo" />
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Features</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Performance</a></li>
+                        <li><a href="#">Design</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Maintenance</a></li>
+                        <li><a href="#">Financing</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </li>
+                <li><a href="#features">Key Features</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Nida Cars</h1>
+        <p>Experience the next generation of automotive innovation, safety, and design.</p>
+        <a href="#features" class="cta-button">Get Started</a>
+        <p id="thankyou-message" style="color: #e91e63; margin-top: 15px; font-weight: bold; display: none;"></p>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Our Key Features</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Advanced Safety</h3>
+                <p>State-of-the-art safety features to protect you and your loved ones.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Unmatched Performance</h3>
+                <p>High-performance engines delivering power and efficiency.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Elegant Design</h3>
+                <p>Modern, aerodynamic, and stylish designs that turn heads.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Nida Cars. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        const ctaButton = document.querySelector('.cta-button');
+        const thankyouMessage = document.getElementById('thankyou-message');
+
+        ctaButton.addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent default link jump
+            thankyouMessage.textContent = 'Thank you!';
+            thankyouMessage.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
